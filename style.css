@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+h1, h2{
+    color: blue;
+    font-family: 'Honk', system-ui;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+h1{
+    margin-top: 50px;
+}
+
+h2{
+    margin-top: -30px;
+}
+
+body{
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(https://t3.ftcdn.net/jpg/04/96/10/62/360_F_496106275_1wMp561UBy16AZ1hAn4SdPqYBNdJvgsN.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#calculator{
+    max-width: 360px;
+    background-color: #ac0eac;
+    border-radius: 30px;
+    padding: 18px;
+    box-shadow: 15px 10px 3px violet;
+}
+
+#display{
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    background: white;
+    border: none;
+    box-sizing: border-box;
+}
+
+button{
+    font-family: "Anta", sans-serif;;
+    width: calc(25% - 12px);
+    height: 50px;
+    font-size: 22px;
+    margin: 10px 5px;
+    border: none;
+    float: left;
+    background-color: cyan;
+    color: blueviolet;
+    box-shadow: 2px 2px 1px gold;
+    border-radius: 20px;
+}
+
+.operator{
+    color: gold;
+    background-color: violet;
+}
+
+#ac{
+    color: greenyellow;
+}
+
+.equal{
+    width: calc(50% - 12px);
+    background-color: slategrey;
+    color: greenyellow;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(1);
+    box-shadow: 1px 1px 1px black;
+}
